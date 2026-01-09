@@ -153,9 +153,9 @@ struct DetailPage {
       } else {
         // Top bar
         Row() {
-          Image($r('app.media.icon_back'))
-            .width(24)
-            .height(24)
+          Text('←')
+            .fontSize(24)
+            .fontColor(Color.White)
             .onClick(() => this.goBack())
 
           Text('详情')
@@ -165,9 +165,9 @@ struct DetailPage {
 
           Blank()
 
-          Image(this.isCollected ? $r('app.media.icon_collected') : $r('app.media.icon_collect'))
-            .width(24)
-            .height(24)
+          Text(this.isCollected ? '★' : '☆')
+            .fontSize(24)
+            .fontColor(Color.White)
             .onClick(() => this.toggleCollect())
         }
         .width('100%')

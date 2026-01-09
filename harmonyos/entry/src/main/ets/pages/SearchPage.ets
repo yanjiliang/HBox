@@ -84,9 +84,9 @@ struct SearchPage {
     Column() {
       // Top bar with search input
       Row() {
-        Image($r('app.media.icon_back'))
-          .width(24)
-          .height(24)
+        Text('←')
+          .fontSize(24)
+          .fontColor(Color.White)
           .onClick(() => this.goBack())
 
         TextInput({ placeholder: '搜索电影、电视剧、综艺...', text: this.searchKeyword })

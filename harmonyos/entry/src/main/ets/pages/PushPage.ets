@@ -160,10 +160,9 @@ struct PushPage {
         Column() {
           // Top bar
           Row() {
-            Image($r('app.media.icon_back'))
-              .width(24)
-              .height(24)
-              .fillColor(Color.White)
+            Text('←')
+              .fontSize(24)
+              .fontColor(Color.White)
               .onClick(() => this.goBack())
 
             Text('远程推送')
@@ -178,10 +177,9 @@ struct PushPage {
           Blank()
 
           // Center play/pause button
-          Image(this.isPlaying ? $r('app.media.icon_pause') : $r('app.media.icon_play'))
-            .width(60)
-            .height(60)
-            .fillColor(Color.White)
+          Text(this.isPlaying ? '❚❚' : '▶')
+            .fontSize(60)
+            .fontColor(Color.White)
             .onClick(() => this.togglePlayPause())
 
           Blank()

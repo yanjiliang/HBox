@@ -60,9 +60,9 @@ struct CollectPage {
     Column() {
       // Top bar
       Row() {
-        Image($r('app.media.icon_back'))
-          .width(24)
-          .height(24)
+        Text('←')
+          .fontSize(24)
+          .fontColor(Color.White)
           .onClick(() => this.goBack())
 
         Text('我的收藏')
@@ -108,9 +108,9 @@ struct CollectPage {
                     .borderRadius(8)
                     .objectFit(ImageFit.Cover)
 
-                  Image($r('app.media.icon_delete'))
-                    .width(24)
-                    .height(24)
+                  Text('✕')
+                    .fontSize(24)
+                    .fontColor(Color.White)
                     .margin({ top: 8, right: 8 })
                     .onClick(() => this.deleteItem(item.vodId))
                 }

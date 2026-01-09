@@ -199,10 +199,9 @@ struct LivePlayPage {
 
       // Top bar
       Row() {
-        Image($r('app.media.icon_back'))
-          .width(24)
-          .height(24)
-          .fillColor(Color.White)
+        Text('←')
+          .fontSize(24)
+          .fontColor(Color.White)
           .onClick(() => this.goBack())
 
         if (this.channelGroups.length > 0 && this.channelGroups[this.currentGroup]) {
@@ -214,10 +213,9 @@ struct LivePlayPage {
 
         Blank()
 
-        Image($r('app.media.icon_list'))
-          .width(24)
-          .height(24)
-          .fillColor(Color.White)
+        Text('≡')
+          .fontSize(24)
+          .fontColor(Color.White)
           .onClick(() => this.toggleChannelList())
       }
       .width('100%')
@@ -226,16 +224,14 @@ struct LivePlayPage {
 
       // Center controls (channel switch)
       Row({ space: 60 }) {
-        Image($r('app.media.icon_previous'))
-          .width(40)
-          .height(40)
-          .fillColor(Color.White)
+        Text('◀')
+          .fontSize(40)
+          .fontColor(Color.White)
           .onClick(() => this.previousChannel())
 
-        Image($r('app.media.icon_next'))
-          .width(40)
-          .height(40)
-          .fillColor(Color.White)
+        Text('▶')
+          .fontSize(40)
+          .fontColor(Color.White)
           .onClick(() => this.nextChannel())
       }
       .justifyContent(FlexAlign.Center)

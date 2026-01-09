@@ -273,10 +273,9 @@ struct PlayPage {
         Column() {
           // Top bar
           Row() {
-            Image($r('app.media.icon_back'))
-              .width(24)
-              .height(24)
-              .fillColor(Color.White)
+            Text('←')
+              .fontSize(24)
+              .fontColor(Color.White)
               .onClick(() => this.goBack())
 
             Text(this.vodInfo.name)
@@ -298,34 +297,29 @@ struct PlayPage {
 
           // Center controls
           Row({ space: 60 }) {
-            Image($r('app.media.icon_previous'))
-              .width(40)
-              .height(40)
-              .fillColor(Color.White)
+            Text('◀')
+              .fontSize(40)
+              .fontColor(Color.White)
               .onClick(() => this.playPrevious())
 
-            Image($r('app.media.icon_rewind'))
-              .width(40)
-              .height(40)
-              .fillColor(Color.White)
+            Text('⏪')
+              .fontSize(40)
+              .fontColor(Color.White)
               .onClick(() => this.rewind())
 
-            Image(this.isPlaying ? $r('app.media.icon_pause') : $r('app.media.icon_play'))
-              .width(60)
-              .height(60)
-              .fillColor(Color.White)
+            Text(this.isPlaying ? '❚❚' : '▶')
+              .fontSize(60)
+              .fontColor(Color.White)
               .onClick(() => this.togglePlayPause())
 
-            Image($r('app.media.icon_forward'))
-              .width(40)
-              .height(40)
-              .fillColor(Color.White)
+            Text('⏩')
+              .fontSize(40)
+              .fontColor(Color.White)
               .onClick(() => this.fastForward())
 
-            Image($r('app.media.icon_next'))
-              .width(40)
-              .height(40)
-              .fillColor(Color.White)
+            Text('▶')
+              .fontSize(40)
+              .fontColor(Color.White)
               .onClick(() => this.playNext())
           }
           .justifyContent(FlexAlign.Center)

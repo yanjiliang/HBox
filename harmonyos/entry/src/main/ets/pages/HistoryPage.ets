@@ -93,9 +93,9 @@ struct HistoryPage {
     Column() {
       // Top bar
       Row() {
-        Image($r('app.media.icon_back'))
-          .width(24)
-          .height(24)
+        Text('←')
+          .fontSize(24)
+          .fontColor(Color.White)
           .onClick(() => this.goBack())
 
         Text('观看历史')

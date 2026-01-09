@@ -64,9 +64,9 @@ struct SettingPage {
     Column() {
       // Top bar
       Row() {
-        Image($r('app.media.icon_back'))
+        Text('←')
           .width(24)
-          .height(24)
+          
           .onClick(() => this.goBack())
 
         Text('设置')

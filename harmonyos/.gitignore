@@ -2,21 +2,19 @@
 build/
 node_modules/
 oh_modules/
+.hvigor/
+hvigorw
+hvigorw.bat
 
 # IDE files
 .idea/
 .vscode/
 *.iml
+local.properties
 
 # Build files
 *.hap
 *.app
-/.hvigor/
-/hvigor/
-
-# Local configuration
-local.properties
-oh-package-lock.json5
 
 # Signing profiles
 *.p7b
@@ -38,3 +36,7 @@ Thumbs.db
 
 # Debug files
 /entry/.preview/
+
+# Lock files
+oh-package-lock.json5
+package-lock.json
