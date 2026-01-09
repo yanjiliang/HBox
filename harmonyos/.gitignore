@@ -1,0 +1,40 @@
+# HarmonyOS Build outputs
+build/
+node_modules/
+oh_modules/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build files
+*.hap
+*.app
+/.hvigor/
+/hvigor/
+
+# Local configuration
+local.properties
+oh-package-lock.json5
+
+# Signing profiles
+*.p7b
+*.cer
+*.jks
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Debug files
+/entry/.preview/

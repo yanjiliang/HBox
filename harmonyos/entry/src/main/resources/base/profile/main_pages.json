@@ -1,0 +1,13 @@
+{
+  "src": [
+    "pages/HomePage",
+    "pages/DetailPage",
+    "pages/PlayPage",
+    "pages/LivePlayPage",
+    "pages/SearchPage",
+    "pages/SettingPage",
+    "pages/HistoryPage",
+    "pages/CollectPage",
+    "pages/PushPage"
+  ]
+}

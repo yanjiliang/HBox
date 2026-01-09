@@ -1,0 +1,10 @@
+{
+  "name": "hbox-harmonyos",
+  "version": "1.0.0",
+  "description": "HBox TV - Video Streaming Application for HarmonyOS Next",
+  "main": "",
+  "author": "HBox Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+  }
+}

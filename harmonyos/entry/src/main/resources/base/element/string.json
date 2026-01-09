@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "HBox TV - Video Streaming Application for HarmonyOS"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "HBox TV Entry Ability"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "HBox"
+    },
+    {
+      "name": "app_name",
+      "value": "HBox"
+    }
+  ]
+}
